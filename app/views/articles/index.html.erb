@@ -1,0 +1,8 @@
+<h1>All available articles</h1>
+
+<% @articles.each do |f| %>
+<ul>
+<li><%= link_to f.title, article_path(f) %></li>
+</ul>
+<% end %>
+
